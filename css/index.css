@@ -170,6 +170,29 @@
     width: 100%;
 }
 
+
+.box1 a, 
+.box2 a, 
+.box3 a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: .8rem;
+    background-color: rgb(255, 230, 197);
+    padding: 8px;
+    border-radius: 40px;
+    border: solid rgb(255, 222, 178);
+    margin-left: 58px;
+}
+
+.box1 a:hover, 
+.box2 a:hover, 
+.box3 a:hover{
+    background-color: rgb(255, 222, 178);
+    transition: .5s;
+}
+
 /*--------------------------- PREGUNTAS ----------------------*/
 
 .title2{
