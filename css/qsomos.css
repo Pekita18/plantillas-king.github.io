@@ -21,6 +21,14 @@
     background: rgb(235, 235, 235);
 }
 
+.logo{
+    transition: .5s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
 .logo img{
     width: 6rem;
     margin: 13px 30px;
@@ -36,6 +44,11 @@
 .menu ul li{
     list-style: none;
     margin-right: 30px;
+    transition: .5s;
+}
+
+.menu ul li:hover{
+    transform: translateY(-3px);
 }
 
 .menu ul li a{
@@ -87,6 +100,11 @@
     width: 21.5rem;
     padding: -65px;
     margin: 22px;
+    transition: .5s;
+}
+
+.contenido img:hover{
+    transform: scale(1.1);
 }
 
 .text{
@@ -141,6 +159,11 @@
     padding-left: 0;
     margin-bottom: 15px;
     padding: .1rem;
+    transition: .5s;
+}
+
+.cont ul li:hover{
+    transform: scale(1.05);
 }
 
 .cont ul li a{
