@@ -1,0 +1,25 @@
+{
+  "name": "king",
+  "version": "1.0.0",
+  "description": "Plantillas King CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pekita18/plantillasKing.git"
+  },
+  "author": "Valentin Reyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pekita18/plantillasKing/issues"
+  },
+  "homepage": "https://github.com/Pekita18/plantillasKing#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
