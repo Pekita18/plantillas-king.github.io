@@ -70,6 +70,14 @@ $texto: map-get($colors, texto);
     width: 100%;
 }
 
+@mixin box {
+    background: rgb(255, 246, 234);
+    padding: 25px;
+    margin: 62px;
+    margin-top: 20px;
+    transition: .8s;    
+}
+
 @mixin boxh1 {
     font-family: 'Poppins';
     font-weight: 500;
@@ -194,11 +202,12 @@ $texto: map-get($colors, texto);
         }
 }
 
-$list-grid: (1 / 2, 1) (2 / 3, 2) (3 / -1, 3);
+$list-grid: ('1 / 2', 1) ('2 / 3', 2) ('3 / -1', 3);
 
 @each $grids, $box in $list-grid {
     .box#{$box} {
         grid-column: $grids; 
+        @include box();
     }
 }
 
@@ -246,4 +255,61 @@ $list-boxa: 1 a, 2 a ,3 a;
 .box3 a:hover{
     background-color: rgb(255, 222, 178);
     transition: .5s;
+}
+
+@media screen and (max-width: 768px){
+
+    .inicio{
+        grid-column: span 3;
+    
+    
+        h1{
+        font-size: 2.6rem;
+        text-align: center;
+        }
+    
+        p{
+        text-align: center;
+        }
+    }
+    
+    .img-inicio{
+        grid-column: span 3;
+        margin-top: 20px;
+        margin-left: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        img{
+        width: 13rem;
+        }
+    }
+
+
+    .img-qSomos{
+        display: none;
+    }
+
+    .qSomos{
+        grid-column: span 3;
+        margin-left: 0px;
+    
+
+        h2{
+        margin-top: 100px;
+        text-align: center;
+        }
+
+        p{
+        font-size: .85rem;
+        text-align: center;
+        }
+    }
+    
+    .box1, .box2, .box3{
+        margin: 40px;
+        grid-column: span 3;
+    }
+
 }
