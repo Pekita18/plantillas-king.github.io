@@ -88,6 +88,9 @@ $texto: map-get($colors, texto);
     grid-template-rows: repeat(7, auto);
 }
 
+.navbar-nav{
+    margin-left: 450px !important;
+}
 
 
 h1{
@@ -117,16 +120,19 @@ h1{
 
 .cont-material{
     @include text(2 / -1);
-}
 
-.parrafo{
-    @include parrafo;
-}
+    p{
+        @include parrafo;
+    }   
 
+}
 
 
 @media screen and (max-width: 768px){
 
+    .navbar-nav{
+        margin-left: 0px !important;
+    }
 
     #titulo{
         @include titulo($titulo_r);
@@ -154,12 +160,11 @@ h1{
         @include text(span 3);
 
         p{
-            @extend .parrafo;
+            @include parrafo;
             text-align: start;
             margin-right: 19px;
         }
 
     }
     
-
 }

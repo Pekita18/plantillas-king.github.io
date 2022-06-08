@@ -25,7 +25,9 @@ $seconday: rgb(121, 121, 121);
     grid-template-rows: repeat(5, auto);
 }
 
-@import "navbar";
+.navbar-nav{
+    margin-left: 450px !important;
+}
 
 h1{
     grid-column: span 3;
@@ -77,11 +79,11 @@ h1{
     }
 }
 
-@import "footer";
-
-
 @media screen and (max-width: 768px){
 
+    .navbar-nav{
+        margin-left: 0px !important;
+    }
 
     #titulo{
         grid-column: span 3;

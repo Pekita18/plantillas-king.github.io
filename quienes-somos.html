@@ -8,6 +8,7 @@
     
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/qsomos.css">
     <link rel="icon" href="./img/Ico.png">
@@ -16,23 +17,44 @@
 </head>
 <body>
 
-    <div class="container-body">
-        
-        <!----------------- MENU ---------------->
+    <!----------------- MENU ---------------->
 
-        <div class="menu">
-            <div class="logo">
-                <a href="./index.html"><img src="./img/logo.png" alt="Logo"></a>
+    <div class="container bg-light bg-gradient mt-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-lightssss">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" width="100rem">
+            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./materiales.html">Materiales</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./materiales.html">Materiales</a>
+                    </li>
+                </ul>
+                </div>
             </div>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="index.html">Preguntas</a></li>
-                <li><a href="index.html">Contacto</a></li>
-                <li><a href="materiales.html">Materiales</a></li>
-            </ul>
-            <i class="fas fa-bars"></i>
-        </div>
+            </nav>
+    </div>
+
+    <div class="container-body">
 
         <!-------------------------QUIENES SOMOS --------------------->
 
@@ -69,52 +91,49 @@
             <p>El gerente de la empesa Plantillas King actualmente es Valentin Reyes. Dolorem cum incidunt illum vitae fugiat dignissimos eius, perferendis sequi officiis tempore eaque, praesentium hic sapiente consequuntur. Fuga beatae dolor maiores illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odio ut libero accusantium repudiandae officiis tempore aliquid tempora. Quibusdam aliquid rerum in iure possimus ipsam pariatur eligendi eum architecto eveniet.Dolorem cum incidunt illum vitae fugiat dignissimos eius, perferendis sequi officiis tempore eaque, praesentium hic sapiente consequuntur..</p>
         </div>
 
+    </div>
 
+    <!---------------------- FOOTER --------------------->
 
-        <!-------------------------- FOOTER ----------------------->
+    <div class="container">
+        <footer class="row row-cols-5 py-5 my-5 border-top">
 
-        <footer class="footer1">
-
-            <h2 id="menu">Menu</h2>
-            
-            <div class="cont">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="quienes-somos.html">Quienes Somos</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="#preguntas">Preguntas</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="materiales.html">Materiales</a></li>
-                </ul>
+            <div class="col-4">
+            <h5>Menu</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quienes Somos</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Productos</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contacto</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Materiales</a></li>
+            </ul>
             </div>
 
-        </footer>
-
-        <footer class="footer2">
-            <h2 id="menu">Contactos</h2>
-                
-            <div class="cont">
-                <ul>
-                    <li><a href="#">WhatsApp</a></li>
-                    <li><a href="#">Gmail</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Programador</a></li>
-                </ul>
+            <div class="col-4">
+            <h5>Contacto</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">WhatsApp</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gmail</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Programador</a></li>
+            </ul>
             </div>
-        </footer>
 
-        <footer class="footer3">
-            <h2 id="menu">Social</h2>
-                
-                <div class="cont">
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                </div>
+            <div class="col-4">
+            <h5>Social</h5>
+            <ul class="nav flex-row">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="fab fa-instagram"></i></a></li>
+                <li class="nav-item ms-3"><a href="#" class="nav-link p-0 text-muted"><i class="fab fa-facebook"></i></a></li>
+                <li class="nav-item ms-3"><a href="#" class="nav-link p-0 text-muted"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>

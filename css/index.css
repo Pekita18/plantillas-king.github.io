@@ -10,6 +10,9 @@
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(7, auto); }
 
+.navbar-nav {
+  margin-left: 450px !important; }
+
 .inicio {
   grid-column: 1 / 2; }
   .inicio h1 {
@@ -187,6 +190,8 @@
   transition: .5s; }
 
 @media screen and (max-width: 768px) {
+  .navbar-nav {
+    margin-left: 0px !important; }
   .inicio {
     grid-column: span 3; }
     .inicio h1 {

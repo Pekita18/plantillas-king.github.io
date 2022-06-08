@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+//------------------------- MAPAS -----------------------------------//
+
+$size: (
+    titulo: 3rem,
+    titulo_r: 2.3rem,
+    subtitulo: 2rem,
+    subtitulo_r: 1.8rem,
+    footer: 1.3rem,
+    parrafo: 1rem,
+    parrafo_r: .9rem
+);
+
+$titulo: map-get($size, titulo);
+$titulo_r: map-get($size, titulo_r);
+$subtitulo: map-get($size, subtitulo);
+$subtitulo_r: map-get($size, subtitulo_r);
+$footer: map-get($size, footer);
+$parrafo: map-get($size, parrafo);
+$parrafo_r: map-get($size, parrafo_r);
+
+
+$colors: (
+    menu: rgb(235, 235, 235),
+    footer: rgb(121, 121, 121),
+    texto: rgb(0, 0, 0)
+);
+
+$menu: map-get($colors, menu);
+$footer: map-get($colors, footer);
+$texto: map-get($colors, texto);
+
+
+//---------------------------------- MIXIN -----------------------------------//
+
+@mixin titulo ($fs){
+    grid-column: span 3;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: $fs;
+    margin-top: 80px;
+    text-align: center;    
+}
+
+@mixin title {
+    display: block;
+    grid-column: span 3;
+    margin-left: 120px;
+    margin-top: 50px;
+    background-color: rgb(255, 246, 234);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2 rem;
+    text-align: center;
+    padding-left: -2px;
+    padding-top: 10px;
+    margin-left: 0px;
+    margin-bottom: -53px;    
+}
+
+@mixin text ($fw, $fz) {
+    font-family: 'Poppins';
+    font-weight: $fw;
+    font-size: $fz;
+}
+
+@mixin img($wh, $ml, $mt){
+    background: white;
+    width: $wh;
+    margin-left: $ml;
+    margin-top: $mt;
+    transition: .5s;
+}
+
+@mixin producto($gc, $bc, $mt, $ml){
+    grid-column: $gc;
+    background-color: $bc;
+    margin-top: $mt;
+    margin-left: $ml;
+}
+
+@mixin a {
+    padding: 10px;
+    border: 2px solid rgb(255, 183, 83);
+    text-decoration: none;
+    border-radius: 35px;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: -6px;    
+}
+
+
+
+
+//--------------------------------- SCSS ----------------------------------//
+
+*{
+    box-sizing: border-box;
+}
+
+.container-body{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(7, auto);
+}
+
+.navbar-nav{
+    margin-left: 450px !important;
+}
+
+.title{
+    display: none;
+}
+
+.producto{
+    @include producto(1 / 2, rgb(255, 246, 234), 0px, 120px);
+    height: 560px;
+    padding: 277px;
+
+    img{
+        @include img(318px, -236px, -224px);
+    }
+
+    .img:hover{
+        transform: scale(1.05);
+    }
+
+}
+
+.contenido{
+    @include producto(2 / -1, rgb(255, 246, 234), 0px, 120px);
+    padding-top: 50px;
+
+    h1{
+        @include text(600, $titulo);
+    }
+
+    p{
+        @include text(300, $parrafo);
+    }
+
+    span{
+        @include text(400, 1.5rem);
+    }
+
+    h4{
+        @include text(400, 1.4rem);
+        margin-left: 430px;
+        margin-top: -34px;
+        margin-bottom: 60px;
+    }
+
+    a{
+        @include a();
+    }
+
+    a:hover{
+        border: 3px solid rgb(253, 175, 66);
+        background-color: rgb(255, 195, 110);
+        transition: .5s;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .navbar-nav{
+        margin-left: 0px !important;
+    }
+
+    .title{
+        @include title();
+    }
+
+    .producto{
+        grid-column: span 3;
+        padding: 97px;
+        height: 292px;
+    }
+
+    .producto img{
+        @include img(264px, -77px, -77px)
+    }
+
+    .contenido{
+        @include producto(span 3, rgb(255, 246, 234), 0px, 0px);
+        height: 325px;
+    }
+    
+    .contenido h1{
+        display: none;
+    }
+    
+    .contenido p {
+        text-align: center;
+        margin: 5px;
+    }
+    
+    .contenido span{
+        margin-left: 5px;
+    }
+    
+    .contenido h4{
+        margin-left: 90px;
+        margin-top: -37px;
+    }
+    
+    .contenido a{
+        margin-left: 10px;
+    }
+    
+    .contenido a:hover{
+        border: 3px solid rgb(253, 175, 66);
+        background-color: rgb(255, 195, 110);
+        transition: .5s;
+    }
+
+}
+
+

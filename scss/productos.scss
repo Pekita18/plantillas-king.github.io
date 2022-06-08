@@ -122,86 +122,13 @@ $texto: map-get($colors, texto);
 }
 
 .navbar-nav{
-    margin-left: 450px !important;
+    margin-left: 500px !important;
 }
 
-.inicio{
-    grid-column: 1 / 2; 
-    
-        h1{
-
-            @include titulo(700, $titulo);
-
-        }
-
-        p{
-            @include parrafo();
-        }
-
-}
-
-.img-inicio{
-    margin-top: 41px;
-    margin-right: 40px;
-    grid-column: 3 / -1;
-
-        img{
-
-            @include img(20rem, none, none, .5s);
-
-        }
-
-        img:hover{
-
-            transform: scale(1.1);
-
-        }
-
-}
-
-.img-qSomos{
-    grid-column: 1 / 2;
-
-        img{
-
-            @include img(25rem, none, none, .5s);
-            margin-top: -30px;
-
-        }
-
-        img:hover{
-
-            transform: scale(1.1);
-
-        }
-
-}
-
-.qSomos{
-    grid-column: 2 / -1;
-    margin-left: 100px;
-
-        h1{
-
-            @include titulo(600, $subtitulo);
-
-        }
-
-        p{
-
-            @include parrafo();
-
-        }
-
-}
-
-.title{
+#titulo{
     grid-column: 1 / -1;
-
-        h1{
-            @include titulo(600, $subtitulo);
-            text-align: center;
-        }
+    @include titulo(600, $subtitulo);
+    text-align: center;
 }
 
 $list-grid: ('1 / 2', 1) ('2 / 3', 2) ('3 / -1', 3);
@@ -211,10 +138,6 @@ $list-grid: ('1 / 2', 1) ('2 / 3', 2) ('3 / -1', 3);
         grid-column: $grids; 
         @include box();
     }
-}
-
-.box1:hover, .box2:hover, .box3:hover{
-    transform: rotateZ(3deg);
 }
 
 .img-box{
@@ -263,54 +186,6 @@ $list-boxa: 1 a, 2 a ,3 a;
 
     .navbar-nav{
         margin-left: 0px !important;
-    }
-
-    .inicio{
-        grid-column: span 3;
-    
-    
-        h1{
-        font-size: 2.6rem;
-        text-align: center;
-        }
-    
-        p{
-        text-align: center;
-        }
-    }
-    
-    .img-inicio{
-        grid-column: span 3;
-        margin-top: 20px;
-        margin-left: 36px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        img{
-        width: 13rem;
-        }
-    }
-
-
-    .img-qSomos{
-        display: none;
-    }
-
-    .qSomos{
-        grid-column: span 3;
-        margin-left: 0px;
-    
-
-        h2{
-        margin-top: 100px;
-        text-align: center;
-        }
-
-        p{
-        font-size: .85rem;
-        text-align: center;
-        }
     }
     
     .box1, .box2, .box3{
