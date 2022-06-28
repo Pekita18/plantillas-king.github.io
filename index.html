@@ -23,8 +23,8 @@
     <div class="container bg-light bg-gradient mt-4">
         <nav class="navbar navbar-expand-lg navbar-light bg-lightssss">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./img/logo.png" alt="" width="100rem">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.png" alt="Logo Codear" width="100rem">
             </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,13 +38,13 @@
                     <a class="nav-link active" aria-current="page" href="./quienes-somos.html">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#pr">Productos</a>
+                    <a class="nav-link active" aria-current="page" href="#prod">Productos</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#faq">Preguntas</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#con">Contacto</a>
+                    <a class="nav-link active" aria-current="page" href="#cont">Contacto</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./materiales.html">Materiales</a>
@@ -83,7 +83,7 @@
 
         <!----------------- PRODUCTOS ------------------->
 
-        <div class="title">
+        <div class="title" id="prod">
             <h1>Productos</h1>
         </div>
 
@@ -121,13 +121,14 @@
     <!---------------- PREGUNTAS ----------------->
 
     <div class="title mb-5" id="faq">
-        <h1>Preguntas Frecuentes</h1>
+        <h1 id="prefre"> Preguntas Frecuentes</h1>
+        <h1 id="prefre_r">Preguntas <br> Frecuentes</h1>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-sm-5">
-                <img src="./img/faq.png" class="img-fluid ms-5" alt="..." width="300rem">
+                <img src="./img/faq.png" class="img-fluid ms-5" alt="FAQ" width="300rem" id="faq-img">
             </div>
             <div class="col ms-4">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -178,13 +179,13 @@
 
     <!-------------------- CONTACTO -------------------->
     
-    <div class="title mb-5" id="#con">
+    <div class="title mb-5" id="cont">
         <h1>Contacto</h1>
     </div>
 
     <div class="row p-5" style="background-color: rgb(255, 246, 234);">
         <div class="col-sm-6 mb-5">
-            <input type="text" class="form-control" placeholder="Nobre" aria-label="First name">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
         </div>
         <div class="col-sm-6 mb-5">
             <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
@@ -206,13 +207,14 @@
             <div class="col-4">
             <h5>Menu</h5>
             <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quienes Somos</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Productos</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contacto</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Materiales</a></li>
-            </ul>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-muted">Inicio</a></li>
+                    <li class="nav-item mb-2"><a href="../quienes-somos.html" class="nav-link p-0 text-muted">Quienes Somos</a></li>
+                    <li class="nav-item mb-2"><a href="../productos.html" class="nav-link p-0 text-muted">Productos</a></li>
+                    <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-muted">Preguntas</a></li>
+                    <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-muted">Contacto</a></li>
+                    <li class="nav-item mb-2"><a href="../materiales.html" class="nav-link p-0 text-muted">Materiales</a></li>
+                </ul>
             </div>
 
             <div class="col-4">

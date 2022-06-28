@@ -93,7 +93,10 @@
   .producto {
     grid-column: span 3;
     padding: 97px;
-    height: 292px; }
+    height: 288px;
+    margin-top: 48px;
+    margin-left: 0px;
+    width: 320px; } 
   .producto img {
     background: white;
     width: 264px;
@@ -105,12 +108,13 @@
     background-color: #fff6ea;
     margin-top: 0px;
     margin-left: 0px;
-    height: 325px; }
+    height: 395px; }
   .contenido h1 {
     display: none; }
   .contenido p {
     text-align: center;
-    margin: 5px; }
+    margin: 5px;
+    margin-bottom: 40px; }
   .contenido span {
     margin-left: 5px; }
   .contenido h4 {

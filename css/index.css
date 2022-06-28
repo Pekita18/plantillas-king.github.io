@@ -72,6 +72,9 @@
     margin-top: 80px;
     text-align: center; }
 
+#prefre_r{
+  display: none; }
+
 .box1 {
   grid-column: "1 / 2";
   background: #fff6ea;
@@ -183,11 +186,36 @@
   border: solid #ffdeb2;
   margin-left: 58px; }
 
+.box1 a, 
+.box2 a, 
+.box3 a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: solid 1px #ffdeb2;
+    border-radius: 40px;
+    background-color: #fff6ea;
+    margin-left: 70px; }
+
 .box1 a:hover,
 .box2 a:hover,
 .box3 a:hover {
   background-color: #ffdeb2;
-  transition: .5s; }
+  transition: .5s;
+  color: black; }
+
+@media screen and (max-width: 1024px) {
+  .collapse{
+        margin-left: -200px; } 
+  .box1 a, .box2 a, .box3 a{
+        padding: 3px;
+        margin-left: 18px;
+        font-size: 10px; }
+  .img-box{
+    width: 132px;  }
+  .img-box img{
+    width: 140px;
+    height: 162px; }}
 
 @media screen and (max-width: 768px) {
   .navbar-nav {
@@ -213,12 +241,22 @@
   .qSomos {
     grid-column: span 3;
     margin-left: 0px; }
-    .qSomos h2 {
+    .qSomos h1 {
       margin-top: 100px;
       text-align: center; }
     .qSomos p {
       font-size: .85rem;
       text-align: center; }
+  #prefre{
+    display: none;
+  }
+  #prefre_r{
+    display: block; }
+  #faq-img{
+    display: none;  }
   .box1, .box2, .box3 {
     margin: 40px;
-    grid-column: span 3; } }
+    grid-column: span 3; }
+  .box1 a, .box2 a, .box3 a{
+    padding: 3px;
+    margin-left: 40px;} }

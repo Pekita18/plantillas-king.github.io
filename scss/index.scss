@@ -252,11 +252,38 @@ $list-boxa: 1 a, 2 a ,3 a;
     }
 }
 
+.box1 a, 
+.box2 a, 
+.box3 a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: solid 1px #ffdeb2;
+    border-radius: 40px;
+    background-color: #fff6ea;
+    margin-left: 70px;
+}
+
 .box1 a:hover, 
 .box2 a:hover, 
 .box3 a:hover{
     background-color: rgb(255, 222, 178);
     transition: .5s;
+    color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .collapse{
+        margin-left: -200px;
+    }
+
+    .box1 a, .box2 a, .box3 a{
+    padding: 3px;
+    margin-left: 18px;
+    font-size: 10px;
+}
+
+
 }
 
 @media screen and (max-width: 768px){
@@ -302,7 +329,7 @@ $list-boxa: 1 a, 2 a ,3 a;
         margin-left: 0px;
     
 
-        h2{
+        h1{
         margin-top: 100px;
         text-align: center;
         }
@@ -312,10 +339,19 @@ $list-boxa: 1 a, 2 a ,3 a;
         text-align: center;
         }
     }
+
+    #faq-img{
+        display: none;
+    }
     
     .box1, .box2, .box3{
         margin: 40px;
         grid-column: span 3;
+    }
+
+    .box1 a, .box2 a, .box3 a{
+    padding: 3px;
+    margin-left: 40px;
     }
 
 }
