@@ -99,8 +99,8 @@
     width: 320px; } 
   .producto img {
     background: white;
-    width: 264px;
-    margin-left: -77px;
+    width: 219px !important;
+    margin-left: -51px;
     margin-top: -77px;
     transition: .5s; }
   .contenido {
