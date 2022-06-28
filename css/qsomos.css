@@ -47,7 +47,13 @@ h1 {
     font-size: 1rem;
     margin-left: 60px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (width: 768px) {
+  .contenido img {
+    display: none; }}
+  .text{
+    grid-column: span 3;
+  }
+@media screen and (max-width: 480px) {
   .navbar-nav {
     margin-left: 0px !important; }
   #titulo {
