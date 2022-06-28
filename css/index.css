@@ -204,7 +204,7 @@
   transition: .5s;
   color: black; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width: 1024px) {
   .collapse{
         margin-left: -200px; } 
   .box1 a, .box2 a, .box3 a{
@@ -221,7 +221,7 @@
   .navbar-nav {
     margin-left: 0px !important; }
   .inicio {
-    grid-column: span 3; }
+    grid-column: span 3;}
     .inicio h1 {
       font-size: 2.6rem;
       text-align: center; }
