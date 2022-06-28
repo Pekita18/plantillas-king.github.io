@@ -101,7 +101,7 @@
     background: white;
     width: 219px !important;
     margin-top: -77px;
-    transition: .5s;}}
+    transition: .5s;}
     .contenido {
       grid-column: span 3;
       background-color: #fff6ea;
@@ -124,7 +124,7 @@
     .contenido a:hover {
       border: 3px solid #fdaf42;
       background-color: #ffc36e;
-      transition: .5s; }
+      transition: .5s; }}
 @media screen and (max-width: 480px) {
   .navbar-nav {
     margin-left: 0px !important; }

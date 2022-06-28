@@ -49,10 +49,10 @@ h1 {
 
 @media screen and (width: 768px) {
   .contenido img {
-    display: none; }}
+    display: none; }
   .text{
     grid-column: span 3;
-  }
+  }}
 @media screen and (max-width: 480px) {
   .navbar-nav {
     margin-left: 0px !important; }

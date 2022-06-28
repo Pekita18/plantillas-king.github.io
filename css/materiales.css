@@ -53,10 +53,10 @@ h1 {
 
 @media screen and (width: 768px) {
   .contenido img {
-    display: none; }}
+    display: none; }
   .cont-material{
     grid-column: span 3;
-  }
+  }}
 
 @media screen and (max-width: 480px) {
   .navbar-nav {
